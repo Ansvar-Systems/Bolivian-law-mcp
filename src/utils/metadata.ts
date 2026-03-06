@@ -1,5 +1,5 @@
 /**
- * Response metadata utilities for Dominican Republic Law MCP.
+ * Response metadata utilities for Bolivian Law MCP.
  */
 
 import type Database from '@ansvar/mcp-sqlite';
@@ -32,12 +32,12 @@ export function generateResponseMetadata(
   }
 
   return {
-    data_source: 'Dominican Republic Law (consultoria.gov.do) — National Council for Law Reporting',
-    jurisdiction: 'KE',
+    data_source: 'Gaceta Oficial de Bolivia / LexIVOX (lexivox.org) — Estado Plurinacional de Bolivia',
+    jurisdiction: 'BO',
     disclaimer:
-      'This data is sourced from Dominican Republic Law under Government Open Data principles. ' +
-      'The authoritative versions are in English. Swahili translations may be available for some documents. ' +
-      'Always verify with the official Dominican Republic Law portal (consultoria.gov.do).',
+      'This data is sourced from the Gaceta Oficial de Bolivia and LexIVOX under Government Open Data principles. ' +
+      'The authoritative versions are maintained by the Estado Plurinacional de Bolivia. ' +
+      'Always verify with the official portal (lexivox.org).',
     freshness,
   };
 }
