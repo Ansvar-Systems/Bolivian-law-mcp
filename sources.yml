@@ -1,0 +1,46 @@
+# sources.yml
+schema_version: "1.0"
+mcp_name: "Bolivian Law MCP"
+jurisdiction: "BO"
+
+sources:
+  - name: "LexiVox — Bolivian Legislative Database"
+    authority: "Asamblea Legislativa Plurinacional de Bolivia"
+    official_portal: "https://lexivox.org"
+    canonical_identifier: "LexiVox document ID (numeric)"
+    retrieval_method: "HTML_SCRAPE"
+    api_documentation: "N/A — HTML scraping of public portal"
+    update_frequency: "monthly"
+    last_ingested: "2026-01-01"
+    license_or_terms:
+      type: "Bolivian Government Open Data"
+      url: "https://lexivox.org"
+      summary: "Bolivian legislation is publicly accessible; LexiVox aggregates official texts from the Gaceta Oficial de Bolivia under open access"
+    coverage:
+      scope: "All active Bolivian legislation including Constitución Política del Estado (2009), Ley N° 164 de Telecomunicaciones (2011), Ley N° 975 de Protección de Datos Personales (2022), Ley N° 348 integral para garantizar a las mujeres una vida libre de violencia, Código Civil, Código Penal, and 24,000+ statutes and decrees"
+      limitations: "Some older legislation from the pre-digital era may have incomplete text; departmental and municipal ordinances (ordenanzas municipales) are not included; unofficial translations to Quechua or Aymara are not available"
+    languages:
+      - "es"
+
+  - name: "Gaceta Oficial de Bolivia"
+    authority: "Estado Plurinacional de Bolivia — Ministerio de la Presidencia"
+    official_portal: "https://www.gacetaoficialdebolivia.gob.bo"
+    canonical_identifier: "Número de Gaceta Oficial + date"
+    retrieval_method: "HTML_SCRAPE"
+    api_documentation: "N/A"
+    update_frequency: "daily"
+    last_ingested: "2026-01-01"
+    license_or_terms:
+      type: "Bolivian Government Public Domain"
+      url: "https://www.gacetaoficialdebolivia.gob.bo"
+      summary: "Official government gazette; authoritative primary source for all promulgated legislation"
+    coverage:
+      scope: "New laws, supreme decrees, ministerial resolutions, and other official instruments from publication date onward"
+      limitations: "Historical gazette issues may be available only in scanned PDF format; full-text search not available on the official portal"
+    languages:
+      - "es"
+
+data_freshness:
+  automated_checks: true
+  check_frequency: "weekly"
+  last_verified: "2026-01-01"
